@@ -13,12 +13,12 @@ public class AbsoluteMax {
         if (numbers == null || numbers.length == 0) {
             throw new IllegalArgumentException("Numbers array cannot be empty or null");
         }
-        int absMax = numbers[0];
+        int absMax1 = numbers[0];
         for (int i = 1; i < numbers.length; i++) {
-            if (Math.abs(numbers[i]) > Math.abs(absMax)) {
-                absMax = numbers[i];
+            if (Math.abs(numbers[i]) > Math.abs(absMax1)) {
+                absMax1 = numbers[i];
             }
         }
-        return absMax;
+        return absMax1;
     }
 }
